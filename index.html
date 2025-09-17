@@ -55,14 +55,22 @@
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      justify-items: center;
       margin: 30px 0;
     }
     .gallery img {
-      width: 100%;
+      width: 280px;
+      height: auto;
+      object-fit: cover;
       border-radius: 10px;
       border: 2px solid #fff;
+      box-shadow: 0 0 10px #27ff27;
+      transition: transform 0.2s ease-in-out;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
     }
     .bonus {
       background: #111;
