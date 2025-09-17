@@ -14,7 +14,7 @@
     body {
       font-family: 'Montserrat', sans-serif;
       background: #000;
-      color: #fff;
+      color: #ff2c2c;
       line-height: 1.6;
     }
     .container {
@@ -24,14 +24,11 @@
       padding: 40px 0;
       text-align: center;
     }
-    h1 {
-      font-size: 26px;
-      margin-bottom: 10px;
+    h1, .highlight h2, .white-text, .bonus, .guarantee {
       color: #fff;
     }
     h2 {
       font-size: 20px;
-      color: #27ff27;
       margin: 20px 0;
     }
     p {
@@ -40,7 +37,7 @@
     }
     .price {
       font-size: 36px;
-      color: #27ff27;
+      color: #ff2c2c;
       margin: 20px 0;
     }
     .btn {
@@ -65,33 +62,31 @@
       height: auto;
       object-fit: cover;
       border-radius: 10px;
-      border: 2px solid #fff;
-      box-shadow: 0 0 10px #27ff27;
+      border: 2px solid #ff2c2c;
+      box-shadow: 0 0 10px #ff2c2c;
       transition: transform 0.2s ease-in-out;
     }
     .gallery img:hover {
       transform: scale(1.05);
     }
-    .bonus {
+    .bonus, .guarantee, .highlight {
       background: #111;
       padding: 20px;
       border-radius: 10px;
-      margin-top: 40px;
+      margin: 40px 0;
+    }
+    .green-text {
+      color: #27ff27;
     }
     ul {
       text-align: left;
       padding-left: 20px;
       margin-top: 10px;
+      color: #fff;
     }
     ul li::before {
       content: '🔥';
       margin-right: 10px;
-    }
-    .guarantee {
-      background: #111;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 40px 0;
     }
     .footer {
       font-size: 12px;
@@ -102,7 +97,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>🔥 TENHA ACESSO A 500 EDIÇÕES DA PLAYBOY BRASIL NA PALMA DA SUA MÃO</h1>
+    <h1 class="white-text">🔥 TENHA ACESSO A 500 EDIÇÕES DA PLAYBOY BRASIL NA PALMA DA SUA MÃO</h1>
     <img src="https://i.imgur.com/Es9JjR4.png" alt="Coleção Playboy" style="width: 100%; max-width: 400px; margin: 30px auto;" />
     
     <h2>DE R$97 POR APENAS</h2>
@@ -118,7 +113,9 @@
       <img src="playboy6.jpg" alt="Playboy 6" />
     </div>
 
-    <h2>📢 MAIS DE 500 REVISTAS PRA VOCÊ LER ONDE QUISER!</h2>
+    <div class="highlight">
+      <h2>📢 MAIS DE 500 REVISTAS PRA VOCÊ LER ONDE QUISER!</h2>
+    </div>
 
     <div class="bonus">
       <h2>VOCÊ TAMBÉM VAI LEVAR:</h2>
@@ -131,7 +128,7 @@
     </div>
 
     <div class="guarantee">
-      <h2>✅ GARANTIA INCONDICIONAL DE 7 DIAS</h2>
+      <h2>✅ GARANTIA INCONDICIONAL <span class="green-text">(DE 7 DIAS)</span></h2>
       <p>Se não curtir, é só pedir o dinheiro de volta. Sem letras miúdas!</p>
       <img src="https://i.imgur.com/xEp2KH3.png" alt="Selo Garantia" style="width: 120px; margin-top: 15px;" />
     </div>
